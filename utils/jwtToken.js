@@ -1,13 +1,13 @@
 export const sendToken = (user, statusCode, res, message) => {
   const token = user.getJWTToken();
-  const options = {
-    expires: new Date(
-      Date.now() + process.env.COOKIE_EXPIRE * 24 * 60 * 60 * 1000
-    ),
-    httpOnly: true, // Set httpOnly to true
-  };
 
-  
+  // Hardcoded expiration value (7 days)
+  const cookieExpireDays = 7; // Replace with your desired value
+
+  const options = {
+    expires: new Date(Date.now() + cookieExpireDays * 24 * 60 * 60 * 1000),
+    httpOnly: true, // Ensures the cookie is not accessible via JavaScript
+  };
 
   res.status(statusCode).cookie("token", token, options).json({
     success: true,
