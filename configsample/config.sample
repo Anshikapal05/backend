@@ -1,0 +1,13 @@
+PORT= 4000
+CLOUDINARY_CLIENT_NAME=dqizcwqim
+CLOUDINARY_CLIENT_API=433847796656874
+CLOUDINARY_CLIENT_SECRET=OnfbP6ZfZOxhuGCBY5qmwc-cLP8
+
+FRONTEND_URL=http://localhost:5173
+
+MONGO_URI=mongodb+srv://anshikapal546:Anshikap05@cluster0.vckzt.mongodb.net/MERN_JOB_SEEKING_WEBAPP
+
+JWT_SECRET_KEY= abcdefgijklmnopqrstuvwxyz
+JWT_EXPIRE=7d
+
+COOKIE_EXPIRE=5
