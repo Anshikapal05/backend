@@ -12,6 +12,8 @@ import fileUpload from "express-fileupload";
 const app = express();
 dotenv.config();
 
+
+
 app.use(
   cors({
     origin: 'https://frontend-snowy-omega.vercel.app',
